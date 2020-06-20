@@ -1,0 +1,25 @@
+.card-body{
+    text-align: center ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center{
+    text-align: center;
+} 
+.countryName{ 
+    font-size: 30px;
+    color: gray;
+}
+.cases{
+    font-size: 40px;
+    white-space: nowrap;
+}
+.recover {
+    color: green;
+    font-size: 40px;
+    white-space: nowrap;
+}
+.death{
+    color: red;
+    font-size: 40px;
+    white-space: nowrap;
+}

@@ -1,0 +1,30 @@
+
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item ">
+          <a class="nav-link " href="#">All Countries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">By Country</a>
+        </li>
+    
+      </ul>
+    </div>
+    <div class="card-body">
+        <mat-form-field>
+            <mat-label>Select your Country</mat-label>
+            <mat-select [(ngModel)]="selectChange" (ngModelChange)="myFunc()">
+              <mat-option  *ngFor="let t of this.report" [value]="t.country">country : {{t.country}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+           <div class="center" [hidden]="isSelected">
+            <h1> country name :</h1> <span class="countryName">{{countryName}} </span><br>
+            <h1>All cases :</h1>   <span class="cases">{{cases}} </span>   <br>
+            <h1>Deathes:</h1> <span class="death">{{deaths}}</span>  <br>
+            <h1>Recoverd:</h1><span class="recover">{{Recoverd}}</span>
+            <h1>new cases</h1><span class="cases">{{newCases}}</span>
+          </div>
+    </div>
+  </div>
